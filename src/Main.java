@@ -12,13 +12,11 @@ public class Main {
 
         Hero[] heroes = createHeroes();
         for (int i = 0; i < heroes.length; i++) {
-            Hero hero = heroes[i];
             int heroNumber = i + 1;
-
             System.out.println("Hero #" + heroNumber
-                    + "\n" + "Health: " + hero.getHealth()
-                    + "\n" + "Damage: " + hero.getDamage()
-                    + "\n" + "Super power: " + hero.getSuperPower()
+                    + "\n" + "Health: " + heroes[i].getHealth()
+                    + "\n" + "Damage: " + heroes[i].getDamage()
+                    + "\n" + "Super power: " + heroes[i].getSuperPower()
                     + "\n" + "-----------------------");
         }
     }
